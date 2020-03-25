@@ -4,10 +4,10 @@ Modified version Numenta Anomaly Benchmark <https://github.com/numenta/NAB>
 
 Now it is very easy to use NAB-metrics for offline algorithms of anomaly detection.
 
-```python
+```md
 Parameters:
-y_true - numpy array int {0,1}
-y_predict - numpy array float [0, 1]
-probationaryPercent - float [0, 1]
-type_profile (type CostMatrix): 'standard', ‘reward_low_FP_rate’, ‘reward_low_FN_rate’
+y_true:               (int)   Ground truth anomaly labels {0, 1}
+y_predict:            (float) Probability from anomaly detection algorithm [0, 1]
+probationaryPercent:  (float) Percent of each data file not to be considered during scoring
+type_profile:         (str)   type of Cost matrix to weight the true positives, false negatives, and false positives during scoring (e.g. 'standard', ‘reward_low_FP_rate’, ‘reward_low_FN_rate’)
 ```
