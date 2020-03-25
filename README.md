@@ -4,9 +4,8 @@ Modified version Numenta Anomaly Benchmark <https://github.com/numenta/NAB>
 
 Now it is very easy to use NAB-metrics for offline algorithms of anomaly detection.
 
+```python
 Parametrs:
-
-```
 y_true - numpy array int {0,1}
 y_predict - numpy array float [0, 1]
 probationaryPercent - float [0, 1]
